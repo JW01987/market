@@ -13,79 +13,265 @@
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-info">
+    <nav class="navbar navbar-expand-xl">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fa-brands fa-shopify"></i>진수퍼마켙</a>
+            <a class="navbar-brand" href="#"><img src="/public/진마트.png" id='logo' art="진마트"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="상품을 검색하세요" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit"><i
-                            class="fas fa-regular fa-magnifying-glass"></i></button>
+            <div class="navbar-list collapse navbar-collapse justify-content-between ms-5" id="navbarSupportedContent">
+                <form role="search">
+                    <div class="search-input input-group">
+                        <input class='ms-2' type="search" placeholder="사고싶은거 검색하기" aria-label="Search">
+                        <button class="btn" type="submit"><i class="fas fa-regular fa-magnifying-glass"></i></button>
+                    </div>
                 </form>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="" class="nav-link active"><i class="fas fa-light fa-user"></i>로그인/회원가입</a>
+                <ul class="navbar-nav mb-2 mb-lg-0 me-5 d-flex justify-content-center">
+                    <li class="nav-item nav-login">
+                        <a href="" class="nav-link"><i class="fas fa-light fa-user"></i>
+                            <div>
+                                <span>로그인하기!!</span>
+                                <span id="font-15px">회원가입하기도!!</span>
+                            </div>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link active"><i class="fas fa-light fa-cart-shopping"></i>장바구니</a>
+                    <li class="nav-item nav-login">
+                        <a href="" class="nav-link"><i class="fas fa-light fa-cart-shopping"></i>
+                            <div>
+                                <span>장바구니에</span>
+                                <span>뭐 있어요?</span>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="navbar navbar-expand-lg bg-light mt-2">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">카테고리</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar navbar-expand-lg sub-nav sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-5" href="#">카테고리</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="shop-list">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">음식</a>
+                            <a class="nav-link" aria-current="page" href="#">식품</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">생필품</a>
+                            <a class="nav-link" href="#">생활용품</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">전자제품</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">반려동물</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">세일중</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">대박 세일중</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">레전드 세일중</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-xl">
         <!-- 이미지 슬라이드 -->
-        <div class="text-center">
-            <img src="/public/세일중.jpeg" class="img-fluid border" alt="세일">
-            <img src="/public/추천중.jpeg" class="img-fluid border" alt="세일">
-            <img src="/public/모름.jpeg" class="img-fluid border" alt="세일">
-        </div>
+        <div class="my-5 mx-auto slide-wrap">
+            <div class="slide-box">
+                <div class="slide-item">
+                    <img src="/public/세일중.jpg" id="slide01" class="img-fluid" alt="세일">
+                </div>
+                <div class="slide-item">
+                    <img src="/public/추천중.jpg" id="slide02" class="img-fluid" alt="세일">
+                </div>
+                <div class="slide-item">
+                    <img src="/public/모름.jpg" id="slide03" class="img-fluid" alt="세일">
+                </div>
 
-        <div>
-            <div>추천 카테고리</div>
-            <div>
-                <div>추천 제품</div>
-                <div>추천 제품</div>
-                <div>추천 제품</div>
+            </div>
+            <div class="slide-btn">
+                <div class="slide_prev_button"><i class="fas fa-regular fa-circle-chevron-left"></i></div>
+                <div class="slide_next_button"><i class="fas fa-regular fa-circle-chevron-right"></i></div>
             </div>
         </div>
-
+        <div class="category mt-5">
+            <div class="category-title">당신에게 추천하는 카테고리</div>
+            <div>
+                <div class="category-sub-title">추천맛을 봐라</div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="/public/mac.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">사과를 팝니다</h5>
+                                <p class="card-text">이건 사과입니다
+                                    애플입니다 한 입 먹혔습니다
+                                    남 모르게 눈물을 흘립니다 또르륵또르륵
+                                </p>
+                                <p class="card-price">9,999원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/public/mac.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">사과를 팝니다</h5>
+                                <p class="card-text">이건 사과입니다
+                                    애플입니다 한 입 먹혔습니다
+                                    남 모르게 눈물을 흘립니다 또르륵또르륵
+                                </p>
+                                <p class="card-price">9,999원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/public/mac.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">사과를 팝니다</h5>
+                                <p class="card-text">이건 사과입니다
+                                    애플입니다 한 입 먹혔습니다
+                                    남 모르게 눈물을 흘립니다 또르륵또르륵
+                                </p>
+                                <p class="card-price">9,999원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/public/mac.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">사과를 팝니다</h5>
+                                <p class="card-text">이건 사과입니다
+                                    애플입니다 한 입 먹혔습니다
+                                    남 모르게 눈물을 흘립니다 또르륵또르륵
+                                </p>
+                                <p class="card-price">9,999원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-btn"><button class="btn">더 많은 카테고리의 맛을 보기 <i
+                            class="fas fa-regular fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="blank"></div>
+        <div class="mt-5 category">
+            <div class="category-title">당신에게 두번째로 추천추천하는 카테고리</div>
+            <div>
+                <div class="category-sub-title">추천하는 거!</div>
+                <div class="row  row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="/public/mac.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">사과를 팝니다</h5>
+                                <p class="card-text">이건 사과입니다
+                                    애플입니다 한 입 먹혔습니다
+                                    남 모르게 눈물을 흘립니다 또르륵또르륵
+                                </p>
+                                <p class="card-price">9,999원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/public/mac.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">사과를 팝니다</h5>
+                                <p class="card-text">이건 사과입니다
+                                    애플입니다 한 입 먹혔습니다
+                                    남 모르게 눈물을 흘립니다 또르륵또르륵
+                                </p>
+                                <p class="card-price">9,999원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/public/mac.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">사과를 팝니다</h5>
+                                <p class="card-text">이건 사과입니다
+                                    애플입니다 한 입 먹혔습니다
+                                    남 모르게 눈물을 흘립니다 또르륵또르륵
+                                </p>
+                                <p class="card-price">9,999원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/public/mac.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">사과를 팝니다</h5>
+                                <p class="card-text">이건 사과입니다
+                                    애플입니다 한 입 먹혔습니다
+                                    남 모르게 눈물을 흘립니다 또르륵또르륵
+                                </p>
+                                <p class="card-price">9,999원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-btn"><button class="btn">더 많은 카테고리의 맛을 보기 <i
+                            class="fas fa-regular fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <footer>
+        <div class="container d-flex justify-content-around flex-column flex-lg-row ">
+            <div>
+                <h4>고객센터</h4>
+                <p>고객센터 000-123-4567</p>
+                <p>운영시간: 9:00 - 9:10</p>
+            </div>
+            <div>
+                <h4>사업자 어쩌구</h4>
+                <p>
+                    대표자: 진 oo시 oo구 ooo로 ooo |
+                </p>
+                <p>
+                    사업자등록번호: 123-4567-890 통신판매업 신고번호: 제1111-OOOO-2222호 |
+                </p>
+                <p>
+                    개인정보보호책임자: 진 Fax: 12-3456-7890 abcd@efghi.com
+                </p>
+            </div>
+            <div>
+                <h4>우리 자주 만나요~</h4>
+                <p>연결은 안되지만......암튼..</p>
+                <i class="fas fa-brands fa-facebook"></i>
+                <i class="fas fa-brands fa-twitter"></i>
+                <i class="fas fa-brands fa-instagram"></i>
+                <i class="fas fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-    <script></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js"
+        integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/public/js/index.js"></script>
+
 </body>
 
 </html>
