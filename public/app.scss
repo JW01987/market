@@ -164,7 +164,7 @@ nav {
         }
 
         button:hover {
-            background-color: #41526207;
+            background-color: #41526232;
         }
 
     }
@@ -237,6 +237,9 @@ footer {
             border: #41526270 1px solid;
             font-size: .8em;
 
+            a {
+                text-decoration: none;
+            }
         }
 
         .btn:hover {
@@ -247,8 +250,7 @@ footer {
 }
 
 .form-join {
-    margin-left: 10em;
-    margin-right: 10em;
+    margin: 8em 10em;
 
 
     p {

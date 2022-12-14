@@ -127,7 +127,7 @@ nav #logo {
   border-radius: 0.5em;
 }
 .category .category-btn button:hover {
-  background-color: rgba(65, 82, 98, 0.0274509804);
+  background-color: rgba(65, 82, 98, 0.1960784314);
 }
 
 .card {
@@ -184,13 +184,15 @@ footer i {
   border: rgba(65, 82, 98, 0.4392156863) 1px solid;
   font-size: 0.8em;
 }
+.form-login .login-btn .btn a {
+  text-decoration: none;
+}
 .form-login .login-btn .btn:hover {
   background-color: rgba(120, 154, 186, 0.4705882353);
 }
 
 .form-join {
-  margin-left: 10em;
-  margin-right: 10em;
+  margin: 8em 10em;
 }
 .form-join p {
   font-size: 1.8em;
