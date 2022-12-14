@@ -1,0 +1,20 @@
+<%- include('head.html') %>
+    <div class="form-login d-flex flex-column">
+        <p>로그인</p>
+        <form action="" class="d-flex flex-column mx-auto">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control form-input" id="floatingInput" placeholder="아이디를 입력하세요" required>
+                <label for="floatingInput">아이디</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control form-input" id="floatingPassword" placeholder="비밀번호를 입력하세요"
+                    required>
+                <label for="floatingPassword">비밀번호</label>
+            </div>
+        </form>
+        <div class="login-btn">
+            <button class="btn">로그인</button>
+            <button class='btn'>회원가입</button>
+        </div>
+    </div>
+    <%- include('tail.html') %>

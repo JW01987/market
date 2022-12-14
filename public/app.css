@@ -52,6 +52,13 @@ nav #logo {
   background-color: #d1e9ff;
 }
 
+.shop-list ul .nav-link {
+  color: rgba(65, 82, 98, 0.662745098);
+}
+.shop-list ul .nav-link:hover {
+  color: #03045e;
+}
+
 .slide-wrap {
   overflow: hidden;
   width: 1000px;
@@ -120,7 +127,7 @@ nav #logo {
   border-radius: 0.5em;
 }
 .category .category-btn button:hover {
-  background-color: rgba(65, 82, 98, 0.1411764706);
+  background-color: rgba(65, 82, 98, 0.0274509804);
 }
 
 .card {
@@ -151,7 +158,52 @@ footer i {
   cursor: pointer;
 }
 
-@media (max-width: 989px) {
+.form-login {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 6em;
+  margin-bottom: 7em;
+}
+.form-login p {
+  font-size: 1.5em;
+}
+.form-login .form-input {
+  width: 20em;
+  height: 4em;
+  padding-left: 1.5em;
+  border: rgba(65, 82, 98, 0.5568627451) 1.5px solid;
+  border-radius: 1em;
+  margin-top: 0.2em;
+}
+.form-login .login-btn {
+  display: inline;
+}
+.form-login .login-btn .btn {
+  margin-top: 1.5em;
+  background-color: rgba(162, 210, 255, 0.4705882353);
+  border: rgba(65, 82, 98, 0.4392156863) 1px solid;
+  font-size: 0.8em;
+}
+.form-login .login-btn .btn:hover {
+  background-color: rgba(120, 154, 186, 0.4705882353);
+}
+
+.form-join {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.form-join p {
+  font-size: 1.8em;
+}
+.form-join input,
+.form-join select {
+  height: 3em;
+}
+.form-join .form-check input {
+  height: 1em;
+}
+
+@media screen and (max-width: 989px) {
   .navbar-expand-xl form,
 .navbar-expand-xl li {
     padding-top: 1em;
@@ -162,11 +214,23 @@ footer i {
   .navbar-list {
     margin-top: 0.5em;
   }
-  .search-input {
-    width: 22em;
+  nav .search-input {
+    display: inline;
+    padding: 0.5em;
   }
-  .search-input input {
-    width: 80%;
+  nav .search-input input {
+    width: 50%;
+    margin: none;
+    padding: none;
+  }
+  .shop-list ul .nav-link {
+    color: rgba(65, 82, 98, 0.662745098);
+  }
+  .shop-list ul .nav-link:hover {
+    color: #03045e;
+  }
+  .shop-list ul li {
+    padding-left: 3em;
   }
   .slide-wrap {
     width: 100%;
@@ -185,7 +249,7 @@ footer i {
     border: none;
   }
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .navbar-expand-xl form,
 .navbar-expand-xl li {
     padding-top: 1em;
@@ -199,14 +263,5 @@ footer i {
   }
   .navbar-expand-xl .navbar-list {
     margin-top: 0.5em;
-  }
-}
-@media (max-width: 600px) {
-  .search-input {
-    width: 20em;
-  }
-  .search-input input {
-    width: 80%;
-    border: #415262 1px solid;
   }
 }/*# sourceMappingURL=app.css.map */

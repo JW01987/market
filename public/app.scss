@@ -69,6 +69,19 @@ nav {
     background-color: #d1e9ff;
 }
 
+.shop-list {
+    ul {
+        .nav-link {
+            color: #415262a9;
+        }
+
+        .nav-link:hover {
+            color: #03045e;
+        }
+    }
+
+}
+
 .slide-wrap {
     overflow: hidden;
     width: 1000px;
@@ -151,7 +164,7 @@ nav {
         }
 
         button:hover {
-            background-color: #41526224;
+            background-color: #41526207;
         }
 
     }
@@ -194,7 +207,69 @@ footer {
 }
 
 
-@media (max-width:989px) {
+.form-login {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 6em;
+    margin-bottom: 7em;
+
+    p {
+        font-size: 1.5em;
+    }
+
+
+    .form-input {
+        width: 20em;
+        height: 4em;
+        padding-left: 1.5em;
+        border: #4152628e 1.5px solid;
+        border-radius: 1em;
+        margin-top: .2em;
+    }
+
+
+    .login-btn {
+        display: inline;
+
+        .btn {
+            margin-top: 1.5em;
+            background-color: #a2d2ff78;
+            border: #41526270 1px solid;
+            font-size: .8em;
+
+        }
+
+        .btn:hover {
+            background-color: #789aba78;
+        }
+
+    }
+}
+
+.form-join {
+    margin-left: 10em;
+    margin-right: 10em;
+
+
+    p {
+        font-size: 1.8em;
+
+    }
+
+    input,
+    select {
+        height: 3em;
+    }
+
+    .form-check {
+        input {
+            height: 1em;
+        }
+    }
+
+}
+
+@media screen and (max-width: 989px) {
     .navbar-expand-xl {
 
         form,
@@ -211,14 +286,37 @@ footer {
         margin-top: .5em;
     }
 
-    .search-input {
-        width: 22em;
-        border: #415262 2px solid;
+    nav {
+        .search-input {
 
-        input {
-            width: 80%;
+            display: inline;
 
+            padding: .5em;
+
+            input {
+                width: 50%;
+                margin: none;
+                padding: none;
+            }
         }
+
+    }
+
+    .shop-list {
+        ul {
+            .nav-link {
+                color: #415262a9;
+            }
+
+            .nav-link:hover {
+                color: #03045e;
+            }
+
+            li {
+                padding-left: 3em;
+            }
+        }
+
     }
 
     .slide-wrap {
@@ -232,6 +330,7 @@ footer {
     .slide-btn {
         font-size: 300%;
     }
+
 
     footer {
         .container {
@@ -247,7 +346,10 @@ footer {
     }
 }
 
-@media(max-width:1200px) {
+
+
+
+@media screen and (max-width:1200px) {
     .navbar-expand-xl {
 
         form,
