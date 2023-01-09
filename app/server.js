@@ -5,6 +5,8 @@ const MongoClient = require('mongodb').MongoClient;
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const session = require('express-session');
+const mongodbID = ''
+const mongodbPW = ''
 
 app.use(session({ secret: '비밀코드', resave: true, saveUninitialized: false }));
 app.use(passport.initialize());
@@ -13,14 +15,9 @@ app.use(express.urlencoded({ extended: true }))
 
 var db;
 
-MongoClient.connect('mongodb+srv://jean:jean1997!@cluster0.vy1cknt.mongodb.net/?retryWrites=true&w=majority', { useUnifiedTopology: true }, function (에러, client) {
+MongoClient.connect(`mongodb+srv://${mongodbID}:${mongodbPW}!@cluster0.vy1cknt.mongodb.net/?retryWrites=true&w=majority`, { useUnifiedTopology: true }, function (에러, client) {
     if (에러) return console.log(에러)
-    db = client.db('market'); //market데베에 접속좀헤주세용
-
-    // db.collection('member').insertOne({ 이름: 'jean', _id: 1 }, function (에러, 결과) {
-    //     console.log('저장완료');
-    // });
-
+    db = client.db('market');
     app.listen(port, function () {
         console.log(`listening on ${port}`)
     })
